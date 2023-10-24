@@ -1,16 +1,17 @@
 #!/bin/sh
 
-echo "Kis no. ka power nikalna hai BC: "
+echo "Enter the your number: "
 
 read n
 
-echo "Power bata lode: " 
+echo "Enter the power of your number: " 
 
 read p
 
-while [$p -gt 0]
+while [ "$p" -gt 1 ]
 do
-	let "p--"
-	let "n*=n"
+	n=$(($n * $n))
+    p=$(($p - 1))
 done
 
+echo $n
