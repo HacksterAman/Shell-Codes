@@ -8,10 +8,9 @@ echo Enter the power of your number:
 
 read p
 
-while [ $p -gt 1 ]
+for i in {0..$p}
 do
 	n=$(($n * $n))
-    p=$(($p - 1))
 done
 
 echo Result: $n
