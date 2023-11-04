@@ -1,8 +1,8 @@
 #!/bin/sh
 
-echo "Kesa hai lode, Kya naam he tera ?"
+echo "What's your name ?"
 
 read name
 
-echo "Andi Mandi Sandi, $name is maa Randi"
+echo "Hello $name, Welcome to my shell code !!!"
 
